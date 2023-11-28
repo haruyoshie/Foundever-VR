@@ -117,6 +117,7 @@ public class tvscreen : MonoBehaviour
 
             _videoPlayer.Play();
 
+            // Wait until the video has finished playing
             while (_videoPlayer.isPlaying)
             {
                 yield return null;
@@ -125,6 +126,7 @@ public class tvscreen : MonoBehaviour
             // Video has finished playing, you can add any additional logic here
 
             contadorImgDB++; // Move to the next video
+            StartCoroutine(RandomVid()); // Start playing the next video
         }
         else
         {
