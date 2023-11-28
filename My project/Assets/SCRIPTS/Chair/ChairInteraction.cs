@@ -75,26 +75,31 @@ public class ChairInteraction : MonoBehaviour
         player.GetComponent<Animator>().SetLayerWeight(1,1f);
         player.GetComponent<Animator>().SetBool(IsSitting,true);
         _Controller._isSit = true;
-        player.GetComponent<CharacterController>().height = 0.1f;
-        player.transform.position = chair.transform.position;
+
+        var position = chair.transform.position;
+        player.transform.position = new Vector3(position.x, player.transform.position.y, position.z);
         player.transform.rotation = chair.transform.rotation;
         player.GetComponent<CharacterController>().enabled = false;
         InteractionManager.Instance.SetInteractState(InteractionState.StillLoking);
         
-        yield return new WaitForSeconds(2.2f); 
+        yield return new WaitForSeconds(2.0f); 
         player.transform.position = Vector3.Lerp(player.transform.position, finalPosSit.position,0.5f );
+        player.GetComponent<CharacterController>().height = 0.1f;
+        
     }
     IEnumerator GetUpCoroutine()
     {
         player.GetComponent<CharacterController>().enabled = false;
         player.GetComponent<Animator>().SetBool(IsSitting,false);
         player.transform.position = Vector3.Lerp(player.transform.position, finalPosGetup.position,0.5f );
+        player.transform.position = new Vector3(chair.transform.position.x, player.transform.position.y, chair.transform.position.z);
+        player.transform.rotation = standUpPos.transform.rotation;
         yield return new WaitForSeconds(2.2f);
         _UiChairInteraction.SetActive(true);
         player.GetComponent<Animator>().SetLayerWeight(1, 0);
         player.GetComponent<CharacterController>().height = 1.8f;
-        player.transform.position = standUpPos.transform.position;
-        player.transform.rotation = standUpPos.transform.rotation;
+        //player.transform.position = standUpPos.transform.position;
+        
         _Controller._isSit = false;
         player.GetComponent<CharacterController>().enabled = true;
     }
