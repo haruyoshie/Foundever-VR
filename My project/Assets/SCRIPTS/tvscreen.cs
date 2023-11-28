@@ -97,9 +97,43 @@ public class tvscreen : MonoBehaviour
             }
         }
     }
-
-
     IEnumerator RandomVid()
+    {
+        if (contadorImgDB < urlVideosBD.Count)
+        {
+            _videoPlayer.url = urlVideosBD[contadorImgDB];
+            _videoPlayer.Prepare();
+
+            while (!_videoPlayer.isPrepared)
+            {
+                yield return null;
+            }
+
+            Debug.Log($"<color=#ff0f09>LA DURACIÓN DEL VIDEO ES: </color>" + _videoPlayer.length);
+            durationVideo = _videoPlayer.length;
+            double minutes = (_videoPlayer.length / 60);
+            Mathf.Floor(((float)minutes));
+            Debug.Log($"<color=#00FF00>LA DURACIÓN DEL VIDEO EN MINUTOS ES: </color>" + Mathf.Floor(((float)minutes)));
+
+            _videoPlayer.Play();
+
+            while (_videoPlayer.isPlaying)
+            {
+                yield return null;
+            }
+
+            // Video has finished playing, you can add any additional logic here
+
+            contadorImgDB++; // Move to the next video
+        }
+        else
+        {
+            Debug.Log("All videos have been played.");
+        }
+    }
+
+
+    /*IEnumerator RandomVid()
     {
         if (contadorImgDB <= urlVideosBD.Count)
         {
@@ -130,7 +164,7 @@ public class tvscreen : MonoBehaviour
         //lastFrame = _videoPlayer.frameCount;
         //_videoPlayer.Play();
         yield return null;
-    }
+    }*/
     private IEnumerator loadVideosFromURL(string videoURL)
     {
         UnityWebRequest _videoRequest = UnityWebRequest.Get(videoURL);
