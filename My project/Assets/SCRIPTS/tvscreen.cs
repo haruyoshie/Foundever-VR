@@ -23,7 +23,7 @@ public class tvscreen : MonoBehaviour
     public Texture _texture;
     public float lastFrame;
     public AudioSource source;
-    public string urlTvApp = "https://us145k12col01/APIS/Api_TVApp/GetContent/Instance/14";
+    public string urlTvApp = "http://us0145lapp01.lat.sitel-world.net/CO/RED/PROD/APIS/Api_TVApp/GetContent/Instance/";
     public string finalString;
     string finalURL = "https://US145K12col01//General/TVApp/Multimedia";
     //public GameObject[] PantallaVideos;
@@ -101,7 +101,11 @@ public class tvscreen : MonoBehaviour
 
     IEnumerator RandomVid()
     {
-        _videoPlayer.url = urlVideosBD[contadorImgDB];
+        if (contadorImgDB <= urlVideosBD.Count)
+        {
+            _videoPlayer.url = urlVideosBD[contadorImgDB];
+        }
+        
         //int random_vid = Random.Range(0, urlVideos.Length);
         Debug.Log(_videoPlayer.isPrepared);
         if(_videoPlayer.isPrepared ) 
