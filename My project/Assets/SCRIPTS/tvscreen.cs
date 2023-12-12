@@ -99,7 +99,7 @@ public class tvscreen : MonoBehaviour
     }
     IEnumerator RandomVid()
     {
-        if (contadorImgDB < urlVideosBD.Count)
+        if (contadorImgDB < urlVideosBD.Count && !_videoPlayer.isPlaying)
         {
             _videoPlayer.url = urlVideosBD[contadorImgDB];
             _videoPlayer.Prepare();

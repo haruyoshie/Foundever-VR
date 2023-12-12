@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.Events;
 public class Controller : MonoBehaviour
 {
+    public CinemachineVirtualCamera cam;
     public GameObject player,_doorPos;
     public bool _isSit,_hasBatch;
     public GameObject Menu,uiMenu;
@@ -17,9 +19,17 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.GetComponent<StarterAssetsInputs>().openMenu.AddListener(OpenMenu);
+        
+        StartCoroutine(searchPlayer());
     }
 
+    IEnumerator searchPlayer()
+    {
+        yield return new WaitForSeconds(0.1f);
+        player = GameObject.FindWithTag("Player");
+        cam.Follow = GameObject.FindWithTag("CinemachineTarget").transform;
+        player.GetComponent<StarterAssetsInputs>().openMenu.AddListener(OpenMenu);
+    }
     public void OpenMenu()
     {
         t = !t;
