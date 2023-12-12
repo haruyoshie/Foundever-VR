@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4TO PISO.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/TERRAZA.unity
+    guid: 9abdb9588c6c92c4a8e123c49bbaa924
   m_configObjects: {}

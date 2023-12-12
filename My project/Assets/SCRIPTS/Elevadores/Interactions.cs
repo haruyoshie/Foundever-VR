@@ -16,7 +16,7 @@ public class Interactions : MonoBehaviour
       }
       private void OnTriggerExit(Collider other)
       {
-          if (other.tag == "Player")
+          if (other.tag.Equals("Player"))
           {
               _UiElevator.SetActive(false);
               InteractionManager.Instance.SetInteractState(InteractionState.Free);
