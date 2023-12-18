@@ -73,95 +73,15 @@ public class NPCElevators : MonoBehaviour
     public void resetInterface()
     {
         numerInterface.text = "";
+        levelFloor = 0;
+        a = 0;
+        c=0;
+        firstNumber = false;
     }
     public void AscensorLevel()
     {
         switch (levelFloor)
         {
-            case 1:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 2:
-                Debug.Log("Este piso esta en construcción");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 3:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 4:
-                Debug.Log("ya esta en ese piso");
-                numerInterface.text = "Same Floor";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 5:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 6:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 7:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 8:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 9:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 10:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 11:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
-            case 12:
-                Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "No access";
-                Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
-                break;
             case 13:
                // Debug.Log("Este piso no tiene acceso");
                 numerInterface.text = "B";
@@ -169,10 +89,10 @@ public class NPCElevators : MonoBehaviour
                 //Invoke("resetInterface", 0);
                 break;
             default:
-                print ("Incorrect intelligence level.");
+                print ("Este piso no tiene acceso");
+                numerInterface.text = "No access";
                 Invoke("resetInterface", 1f);
-                a = 0;
-                c=0;
+               
                 break;
         }
     }
