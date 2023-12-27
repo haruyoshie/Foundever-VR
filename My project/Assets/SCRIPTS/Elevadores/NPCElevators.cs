@@ -51,7 +51,6 @@ public class NPCElevators : MonoBehaviour
             levelFloor = a;
             numerInterface.text = levelFloor.ToString();
             Invoke("AscensorLevel", 3.0f);
-            Debug.Log(number);
         }
         else
         {
@@ -83,20 +82,23 @@ public class NPCElevators : MonoBehaviour
     {
         switch (levelFloor)
         {
+            case 4:
+               // Debug.Log("Este piso no tiene acceso");
+                numerInterface.text = "B";
+                ActiveAgent();
+                //Invoke("resetInterface", 0);
+                break;
             case 13:
                // Debug.Log("Este piso no tiene acceso");
                 numerInterface.text = "B";
-               ActiveAgent();
+                ActiveAgent();
                 //Invoke("resetInterface", 0);
                 break;
-            case 4:
-                numerInterface.text ="B";
-                ActiveAgent();
-            break;
             default:
                 print ("Este piso no tiene acceso");
                 numerInterface.text = "No access";
                 Invoke("resetInterface", 1f);
+            
                 break;
         }
     }
