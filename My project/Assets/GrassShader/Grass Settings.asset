@@ -16,8 +16,8 @@ MonoBehaviour:
   materialToUse: {fileID: 2100000, guid: e6dedc4ec99e8f14f8772daba8c6f5dd, type: 2}
   grassRandomHeightMin: 0
   grassRandomHeightMax: 0
-  bladeRadius: 0.2
-  bladeForwardAmount: 0.38
+  bladeRadius: 0.273
+  bladeForwardAmount: 0.74
   bladeCurveAmount: 2
   bottomWidth: 0.1
   MinWidth: 0.01
@@ -26,11 +26,11 @@ MonoBehaviour:
   MaxHeight: 1
   windSpeed: 0.01
   windStrength: 0.01
-  allowedBladesPerVertex: 4
+  allowedBladesPerVertex: 6
   allowedSegmentsPerBlade: 4
   affectStrength: 1
-  topTint: {r: 0.21030462, g: 0.4528302, b: 0.019223915, a: 1}
-  bottomTint: {r: 0.007164475, g: 0.21698111, b: 0.020278014, a: 1}
+  topTint: {r: 0.48808265, g: 0.7169812, b: 0.27394092, a: 1}
+  bottomTint: {r: 0.33244535, g: 0.46226418, b: 0.13737096, a: 1}
   drawBounds: 0
   minFadeDistance: 40
   maxDrawDistance: 125

@@ -36,7 +36,7 @@ public class NPCElevators : MonoBehaviour
     {
         _Player.GetComponent<ThirdPersonController>().enabled = false;
         _Player.GetComponent<NavMeshAgent>().enabled = true;
-        _PlayerAnim.SetFloat("Speed", 1);
+        _PlayerAnim.SetFloat("Speed", 1.8f);
         _NavMeshAgent.SetDestination(_Ascensor);
         _Doors.SetBool("elevatorOn", true);
         //StartCoroutine(openDoors());
