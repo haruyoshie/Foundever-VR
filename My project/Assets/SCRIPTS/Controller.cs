@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Controller : MonoBehaviour
 {
     public CinemachineVirtualCamera cam;
-    public GameObject player,_doorPos;
+    public GameObject player,_doorPos,camaraMinimap,minimapPoint;
     public bool _isSit,_hasBatch;
     public GameObject Menu,uiMenu;
     public Animator door;
@@ -27,6 +27,8 @@ public class Controller : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         player = GameObject.FindWithTag("Player");
+        camaraMinimap.transform.SetParent(player.transform);
+        minimapPoint.transform.SetParent(player.transform);
         cam.Follow = GameObject.FindWithTag("CinemachineTarget").transform;
         player.GetComponent<StarterAssetsInputs>().openMenu.AddListener(OpenMenu);
     }
