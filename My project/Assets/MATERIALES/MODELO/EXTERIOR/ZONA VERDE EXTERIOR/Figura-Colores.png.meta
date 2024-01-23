@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Figura-Colores.png.meta
 guid: ec19d06e04fbaa947a0b000fc37b2667
+=======
+guid: 42ad0fe039c91f24f9bc48d9604899b4
+>>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Figura-Colores.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +105,33 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Figura-Colores.png.meta
+=======
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Figura-Colores.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Ladrillos blancos/dark_brick_wall_rough_2k.exr.meta
 guid: 1c8991ddd21c2ac4da18c273efcfcd4b
+=======
+guid: a7b2d3b4284edf64994c45c111b356ba
+>>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Ladrillos blancos/dark_brick_wall_rough_2k.exr.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +105,33 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Ladrillos blancos/dark_brick_wall_rough_2k.exr.meta
+=======
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Ladrillos blancos/dark_brick_wall_rough_2k.exr.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []

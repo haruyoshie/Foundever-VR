@@ -1,9 +1,278 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/FOUNDEVER - EXTERIOR Final.blend.meta
 guid: 1a78eb03e02e9484ca060edc87cc9315
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: 9b655bcb00fbd8045b6d069c678ea079
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arbustos
+    second: {fileID: 2100000, guid: f30696ee6c479a6449be9ba79ffd910c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BALDOSA
+    second: {fileID: 2100000, guid: fa4551d30b366824d9de653420cce810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BALDOSA EXTERIOR
+    second: {fileID: 2100000, guid: 85a4464604fe26b45ab2fd3cf2f864bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BALDOSA.003
+    second: {fileID: 2100000, guid: 056914816fe97f54fb56564cb28d2723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BBC Logo
+    second: {fileID: 2100000, guid: c3baf78e1a50c8242a3974657aca1ead, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Baldosa Andenes
+    second: {fileID: 2100000, guid: 3f2d2f842090519489dd9ef6f595171e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Baldosa Grande
+    second: {fileID: 2100000, guid: de131da979fbc7545b2cb4481db06e7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bordes Camino Parque
+    second: {fileID: 2100000, guid: f381a263a3fde974aa1ad8fce6490052, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: COLUMNA LOGOS  EXT
+    second: {fileID: 2100000, guid: b40acf4955abddb48a9fe7062ed3229b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circulos puerta.002
+    second: {fileID: 2100000, guid: 38fdfb23c43cbf745b2fa2ae8d96f9df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Colores Piso Parque
+    second: {fileID: 2100000, guid: 13b8fb024e553624fbe4f184c1d02e73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Entrada Parqueadero
+    second: {fileID: 2100000, guid: 54e41a7707e55c940988eda97bc90e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Espaldar sillas Parque
+    second: {fileID: 2100000, guid: 0115f08612f298740ac9715cb2fa455a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Exterior Edificio
+    second: {fileID: 2100000, guid: 5b0926d05477aef4995452c4c59d65b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Figura colores 1
+    second: {fileID: 2100000, guid: 527631ededcdaa04880e15b407f46531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GUARDAESCOBAS
+    second: {fileID: 2100000, guid: d476ddb77c5086b4cb9a6c8716e7c29d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GUARDAESCOBAS.001
+    second: {fileID: 2100000, guid: 180c7df47dc5c2242b6f06eb9a3b4677, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GUARDAESCOBAS.005
+    second: {fileID: 2100000, guid: 5ee460620bd618641862198fc0ccaab0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GUARDAESCOBAS.006
+    second: {fileID: 2100000, guid: 31c135d5376f85c43beb7105bba488a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LADRILLOS
+    second: {fileID: 2100000, guid: 206b564eaedd4e24f8f152652fb97e85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ladrillos Fachada
+    second: {fileID: 2100000, guid: 1a9e57f6cf6be21438321ff582d0909a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ladrillos Parque
+    second: {fileID: 2100000, guid: c9a198b782a66ae4faf2b98a12524f65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "MADERA BA\xD1O"
+    second: {fileID: 2100000, guid: 994ed5457cb0d9e4e8ea1c4e890ae8fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARCO VENTANAS
+    second: {fileID: -6284417556054530764, guid: 55fc3b8587ad80f4d8c3b07c53ed52a4,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARCO VENTANAS.002
+    second: {fileID: 2100000, guid: 322e425dc204eeb4cbf4afbbfc5df8d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MARCO VENTANAS.003
+    second: {fileID: 2100000, guid: f3a4952f2ff09ff45b21f2e210238b00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METAL ASCENSOR
+    second: {fileID: 2100000, guid: 373d2d1c837a7f34891a8cb5dd9f8482, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METAL ASCENSOR.001
+    second: {fileID: 2100000, guid: 3f5e79e3d6c139c4e9f3cf611b76e34b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METAL ASCENSOR.002
+    second: {fileID: 2100000, guid: e1113eda3ba1dba49a972a18fb3ec453, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METAL ASCENSOR.004
+    second: {fileID: 2100000, guid: 8ea2207e08e1f0b448edd0d24dad5e07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera mesa
+    second: {fileID: 2100000, guid: 0b3c20e5744f2de4aafeb8e65405d03d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Matera
+    second: {fileID: 2100000, guid: 9e0d381a7499dd84d8ae930f8655ca79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: e230a97be085a994ba23e14a840739c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: b6c5f87f5718a9d4aad44866710629b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PARED BLANCA
+    second: {fileID: 2100000, guid: fee9a48f1ad8dad4991e6086fde629dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PARED BLANCA.001
+    second: {fileID: 2100000, guid: 456f19d484837714aa3f8cc4a8d22831, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paredes exterior
+    second: {fileID: 2100000, guid: 968e72a363ce98d4d80a9279279fc074, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pasto exterior
+    second: {fileID: 2100000, guid: 1b28646355f054947aa467382efae0d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Reja
+    second: {fileID: 2100000, guid: 34500342626e5804c82930d0a7d99ffd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Reja Fachada
+    second: {fileID: 2100000, guid: b8ee1887d3fbc94428abf776f6adabd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rojo Manijas Puertas
+    second: {fileID: 2100000, guid: 94fc91a154fd97548b169a943889b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SVGMat.004
+    second: {fileID: 2100000, guid: 999581f6a355af941a208e5b8c824018, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SVGMat.010
+    second: {fileID: 2100000, guid: a2009fe2a3ef70b469bbdf39ed1b69e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Salida Parquedero
+    second: {fileID: 2100000, guid: 49304e82fea900145b3d60d20cdc1157, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Toberin - Foundever
+    second: {fileID: 2100000, guid: 71b924dc40c5754428349728b75a84ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VENTANAS
+    second: {fileID: 2100000, guid: 81ad4d9f64aadad4fac6d1792a8f9f11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VENTANAS.004
+    second: {fileID: 2100000, guid: ff868bb484c87bb499979b9be5b751a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VENTANAS.007
+    second: {fileID: 2100000, guid: a6f9a8d758fb70942bd2747fa2d0e582, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VIDRIO VENTANAS
+    second: {fileID: 2100000, guid: 5e607ba8e25ecc540b2e320bcffc376d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VIDRIOS PRIMER PISO
+    second: {fileID: 2100000, guid: de4ab2d7af7595049843a04820e8be1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vidrios Terraza
+    second: {fileID: 2100000, guid: bddbece134e11694db295074d7bc4a34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro.001
+    second: {fileID: 2100000, guid: 6fd20736d662afd4d89325a0b17fd297, type: 2}
+>>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/FOUNDEVER - EXTERIOR Final.blend.meta
   materials:
     materialImportMode: 2
     materialName: 0
