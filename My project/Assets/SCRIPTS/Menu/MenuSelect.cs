@@ -41,6 +41,6 @@ public class MenuSelect : MonoBehaviour
 
     public void nextScene()
     {
-        SceneManager.LoadScene("LogicEscene");
+        SceneManager.LoadScene("EXTERIOR");
     }
 }
