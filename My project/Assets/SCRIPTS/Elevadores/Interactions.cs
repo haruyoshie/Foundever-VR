@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interactions : MonoBehaviour
 {
      public GameObject _UiElevator;
+     public Button _FirstButtonOnPanel;
   
       private void OnTriggerEnter(Collider other)
       {
@@ -12,6 +14,7 @@ public class Interactions : MonoBehaviour
           {
               _UiElevator.SetActive(true);
               InteractionManager.Instance.SetInteractState(InteractionState.StillMouseInteracting);
+              _FirstButtonOnPanel.Select();
           }
       }
       private void OnTriggerExit(Collider other)
