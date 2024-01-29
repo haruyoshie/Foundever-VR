@@ -198,7 +198,7 @@
                 {
                     "name": "",
                     "id": "9f973413-5e27-4239-acee-38c4a63feeba",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -235,6 +235,17 @@
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "openMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ebfaea32-4afa-4a56-b78c-add849f9d54e",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "openMenu",
                     "isComposite": false,
                     "isPartOfComposite": false

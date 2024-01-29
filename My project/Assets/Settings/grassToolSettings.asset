@@ -25,16 +25,16 @@ MonoBehaviour:
   VertexColorSettings: 0
   VertexFade: 0
   sizeWidth: 0.01
-  sizeLength: 0.01
+  sizeLength: 0.07
   adjustWidth: -0.459
   adjustLength: -1
   adjustWidthMax: 3
   adjustHeightMax: 3
   reprojectOffset: 1
   rangeR: 0
-  rangeG: 0.182
+  rangeG: 1
   rangeB: 0
-  AdjustedColor: {r: 0.010412954, g: 0.24528301, b: 0.013892519, a: 1}
+  AdjustedColor: {r: 0.262902, g: 0.5660378, b: 0, a: 1}
   paintBlockMask:
     serializedVersion: 2
     m_Bits: 0
@@ -49,5 +49,5 @@ MonoBehaviour:
   Flow: 9.42
   density: 0.42
   normalLimit: 0.283
-  grassAmountToGenerate: 100000
+  grassAmountToGenerate: 2147483647
   generationDensity: 1
