@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Baldosa Andenes/concrete_wall_004_nor_gl_1k.exr.meta
 guid: 5d67102c243c3214e9c5850b7ffa092b
-=======
-guid: d7e01c11585414b47affbd8a4946eb9f
->>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Baldosa Andenes/concrete_wall_004_nor_gl_1k.exr.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -58,7 +54,7 @@ TextureImporter:
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 1
-  textureShape: 1
+  textureShape: 2
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -66,8 +62,8 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -105,8 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream:My project/Assets/MATERIALES/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Baldosa Andenes/concrete_wall_004_nor_gl_1k.exr.meta
-=======
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -131,7 +125,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> Stashed changes:My project/Assets/MODELO/EXTERIOR/ZONA VERDE EXTERIOR/Baldosa Andenes/concrete_wall_004_nor_gl_1k.exr.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
