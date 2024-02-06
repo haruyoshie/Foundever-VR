@@ -17,11 +17,14 @@ public class NPCElevators : MonoBehaviour
 
     public Animator _PlayerAnim,_Doors;
 
-    public Vector3 _Ascensor;
+    public Transform[] Ascensores;
+    public Animator[] _DoorsAnimators;
+
     public int levelFloor, stateLevel;
     public bool firstNumber,secondNumber;
     public int a, c;
     public TextMeshProUGUI numerInterface;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals("Player"))
@@ -32,13 +35,15 @@ public class NPCElevators : MonoBehaviour
         }
     }
     
-    public void ActiveAgent()
+    public void ActiveAgent(int Ascensor)
     {
         _Player.GetComponent<ThirdPersonController>().enabled = false;
         _Player.GetComponent<NavMeshAgent>().enabled = true;
+        Animator doorSelected = _DoorsAnimators[Ascensor];
+        Vector3 posAscensor = new Vector3(Ascensores[Ascensor].position.x, Ascensores[Ascensor].position.y, Ascensores[Ascensor].position.z);
+        _Player.GetComponent<NavMeshAgent>().SetDestination(posAscensor);
         _PlayerAnim.SetFloat("Speed", 1.8f);
-        _NavMeshAgent.SetDestination(_Ascensor);
-        _Doors.SetBool("elevatorOn", true);
+        doorSelected.SetBool("elevatorOn", true);
         //StartCoroutine(openDoors());
     }
 
@@ -82,23 +87,34 @@ public class NPCElevators : MonoBehaviour
     {
         switch (levelFloor)
         {
+            case 2:
+                // Debug.Log("Este piso no tiene acceso");
+                numerInterface.text = "A";
+                ActiveAgent(0);
+                //Invoke("resetInterface", 0);
+                break;
             case 4:
                // Debug.Log("Este piso no tiene acceso");
                 numerInterface.text = "B";
-                ActiveAgent();
+                ActiveAgent(1);
+                //Invoke("resetInterface", 0);
+                break;
+            case 7:
+                // Debug.Log("Este piso no tiene acceso");
+                numerInterface.text = "C";
+                ActiveAgent(2);
                 //Invoke("resetInterface", 0);
                 break;
             case 13:
                // Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "B";
-                ActiveAgent();
+                numerInterface.text = "D";
+                ActiveAgent(3);
                 //Invoke("resetInterface", 0);
                 break;
             default:
                 print ("Este piso no tiene acceso");
                 numerInterface.text = "No access";
                 Invoke("resetInterface", 1f);
-            
                 break;
         }
     }
