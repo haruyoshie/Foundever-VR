@@ -89,7 +89,7 @@ public class NPCElevators : MonoBehaviour
         {
             case 2:
                 // Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "E";
+                numerInterface.text = "A";
                 ActiveAgent(0);
                 //Invoke("resetInterface", 0);
                 break;
