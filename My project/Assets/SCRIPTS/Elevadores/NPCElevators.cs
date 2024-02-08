@@ -42,7 +42,7 @@ public class NPCElevators : MonoBehaviour
         Animator doorSelected = _DoorsAnimators[Ascensor];
         Vector3 posAscensor = new Vector3(Ascensores[Ascensor].position.x, Ascensores[Ascensor].position.y, Ascensores[Ascensor].position.z);
         _Player.GetComponent<NavMeshAgent>().SetDestination(posAscensor);
-        _PlayerAnim.SetFloat("Speed", 1.8f);
+        _PlayerAnim.SetFloat("Speed", 1.95f);
         doorSelected.SetBool("elevatorOn", true);
         //StartCoroutine(openDoors());
     }
@@ -89,7 +89,7 @@ public class NPCElevators : MonoBehaviour
         {
             case 2:
                 // Debug.Log("Este piso no tiene acceso");
-                numerInterface.text = "A";
+                numerInterface.text = "E";
                 ActiveAgent(0);
                 //Invoke("resetInterface", 0);
                 break;
