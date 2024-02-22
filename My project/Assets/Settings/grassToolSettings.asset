@@ -25,16 +25,16 @@ MonoBehaviour:
   VertexColorSettings: 0
   VertexFade: 0
   sizeWidth: 0.01
-  sizeLength: 0.07
+  sizeLength: 0.05
   adjustWidth: -0.459
   adjustLength: -1
   adjustWidthMax: 3
   adjustHeightMax: 3
   reprojectOffset: 1
   rangeR: 0
-  rangeG: 1
+  rangeG: 0.5
   rangeB: 0
-  AdjustedColor: {r: 0.262902, g: 0.5660378, b: 0, a: 1}
+  AdjustedColor: {r: 0.39105207, g: 0.5283019, b: 0.27162692, a: 1}
   paintBlockMask:
     serializedVersion: 2
     m_Bits: 0
