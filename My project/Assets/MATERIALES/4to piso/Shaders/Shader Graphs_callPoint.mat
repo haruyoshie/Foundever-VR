@@ -42,11 +42,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _fill: -0.2
-    - _fresnel_power: 4.54
+    - _fresnel_power: 1.29
     - _offset: 0.59
     - _speed: 1.54
     m_Colors:
-    - _Emission: {r: 0.4139633, g: 1.9042312, b: 7.9066987, a: 0}
+    - _Emission: {r: 0.2615354, g: 1.1412454, b: 4.5412054, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5603951462055370668
 MonoBehaviour:
