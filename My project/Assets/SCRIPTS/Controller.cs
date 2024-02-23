@@ -31,6 +31,8 @@ public class Controller : MonoBehaviour
         minimapPoint.transform.SetParent(player.transform);
         cam.Follow = GameObject.FindWithTag("CinemachineTarget").transform;
         player.GetComponent<StarterAssetsInputs>().openMenu.AddListener(OpenMenu);
+        Debug.Log(camaraMinimap.transform.position + "camara");
+        Debug.Log(camaraMinimap.transform.position + "Point");
     }
     public void OpenMenu()
     {
