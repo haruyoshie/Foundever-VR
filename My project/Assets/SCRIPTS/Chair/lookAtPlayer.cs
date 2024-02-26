@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class lookAtPlayer : MonoBehaviour
 {
-    /**[SerializeField] private float updateEverySecond = 0.3f;
+    [SerializeField] private float updateEverySecond = 0.3f;
 
     public Transform CamPlayer;
 
@@ -34,9 +34,9 @@ public class lookAtPlayer : MonoBehaviour
         }
 
         lastUpdatePos = targetPostition;
-    }**/
-	void LateUpdate(){
+    }
+	/*void LateUpdate(){
 		
 		transform.LookAt(transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
-	}
+	}*/
 }
