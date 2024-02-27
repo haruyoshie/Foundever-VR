@@ -10,6 +10,10 @@ public class MenuSelect : MonoBehaviour
 
     public GameObject player;
 
+    void Start()
+    {
+        PlayerPrefs.SetInt("Player",0);
+    }
     public void changeCharacter(string dir)
     {
         switch (dir)
