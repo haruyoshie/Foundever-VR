@@ -415,10 +415,16 @@ PrefabInstance:
     - target: {fileID: 823752877154857137, guid: 0a09bcc38701bdb4c9b49525c347d491,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a09bcc38701bdb4c9b49525c347d491, type: 3}
+--- !u!1 &421877131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 823752877154857137, guid: 0a09bcc38701bdb4c9b49525c347d491,
+    type: 3}
+  m_PrefabInstance: {fileID: 421877130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &427458374
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,13 +609,7 @@ MonoBehaviour:
   - {fileID: 858228706302299528, guid: e3c1d1f8c426394438a6fde69c80067f, type: 3}
   - {fileID: 3271696526214829327, guid: 14e03b40205f72e4b9152e6b49e61130, type: 3}
   currentPersonaje: 0
-  player: {fileID: 760717106}
---- !u!1 &760717106 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bce2e12ef4c900a4785e3565e8edfd0c,
-    type: 3}
-  m_PrefabInstance: {fileID: 788867817}
-  m_PrefabAsset: {fileID: 0}
+  player: {fileID: 421877131}
 --- !u!4 &760717107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bce2e12ef4c900a4785e3565e8edfd0c,
@@ -882,6 +882,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bce2e12ef4c900a4785e3565e8edfd0c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1148920894036959907, guid: bce2e12ef4c900a4785e3565e8edfd0c,
         type: 3}

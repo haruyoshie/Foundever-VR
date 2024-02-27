@@ -31,6 +31,7 @@ public class tvscreen : MonoBehaviour
     public bool t;
     public int total;
     public double durationVideo;
+
     void Start()
     {
         contadorImgDB = 1;
@@ -70,33 +71,84 @@ public class tvscreen : MonoBehaviour
                             finalString = json[i]["Rta"].ToString().Replace("\"", "");
                             urlVideosBD.Add(finalString);
                         }
+                        if (tipoArchivo.Equals("image/jpg") || tipoArchivo.Equals("image/jpeg"))
+                        {
+                            finalString = json[i]["Rta"].ToString().Replace("\"", "");
+                            urlVideosBD.Add(finalString);
+                        }
                     }
-                    StartCoroutine(Iniciar1());
+                    StartCoroutine(DisplayMedia());
                     break;
             }
         }
     }
-    IEnumerator Iniciar1()
+    IEnumerator DisplayMedia()
     {
-        if (contadorImgDB <= urlVideosBD.Count)
+        foreach (string url in urlVideosBD)
         {
-            while (t)
+            if (IsImage(url)) // Check if the URL points to an image
             {
-                yield return new WaitForSeconds(15f);
+                if(_videoPlayer.isPlaying) yield break;
+                _image.enabled = true;
+                //_videoPlayer.enabled = false;
+                //source.enabled = false;
+                yield return StartCoroutine(LoadAndDisplayImage(url));
+                yield return new WaitForSeconds(3f); // Display image for 3 seconds
+            }
+            else // Assume it's a video URL
+            {
+                if (url.Contains("mp4"))
+                {
+                    yield return StartCoroutine(PlayVideo(url));
+                    _image.enabled = false;
+                    //source.enabled = true;
+                    yield return new WaitUntil(() => !_videoPlayer.isPlaying); // Wait until video finishes
+                }
+                
+            }
+        }
 
-                if (contadorImgDB <= urlVideosBD.Count)
-                {
-                    contadorImgDB++;
-                }
-                else
-                {
-                    contadorImgDB = 0;
-                }
-                //yield return new WaitForSeconds((float)durationVideo);
-                StartCoroutine(RandomVid());
+        StartCoroutine(DisplayMedia());
+    }
+
+    bool IsImage(string url)
+    {
+        // Check if the file extension is PNG or JPG
+        return url.EndsWith(".png") || url.EndsWith(".jpg") || url.EndsWith(".jpeg");
+    }
+
+     IEnumerator LoadAndDisplayImage(string imageUrl)
+    {
+        // Load and display the image
+        using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(imageUrl))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.Success)
+            {
+                Texture2D texture = DownloadHandlerTexture.GetContent(webRequest);
+                _image.texture = texture;
+            }
+            else
+            {
+                Debug.LogError("Failed to download image: " + webRequest.error);
             }
         }
     }
+
+    IEnumerator PlayVideo(string videoUrl)
+    {
+        _videoPlayer.url = videoUrl;
+        _videoPlayer.Prepare();
+
+        while (!_videoPlayer.isPrepared)
+        {
+            yield return null;
+        }
+
+        _videoPlayer.Play();
+    }
+
     IEnumerator RandomVid()
     {
         if (contadorImgDB < urlVideosBD.Count && !_videoPlayer.isPlaying)
@@ -166,7 +218,7 @@ public class tvscreen : MonoBehaviour
         //lastFrame = _videoPlayer.frameCount;
         //_videoPlayer.Play();
         yield return null;
-    }*/
+    }
     private IEnumerator loadVideosFromURL(string videoURL)
     {
         UnityWebRequest _videoRequest = UnityWebRequest.Get(videoURL);
@@ -195,7 +247,7 @@ public class tvscreen : MonoBehaviour
 
         Debug.Log("Video should play");
         _videoPlayer.Play();
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -228,7 +280,7 @@ public class tvscreen : MonoBehaviour
         //UIVer.SetActive(false);
         //InteractionManager.Instance.SetInteractState(InteractionState.Free);
     }
-    private void Update()
+   /* private void Update()
     {
         if(contadorImgDB >= 50)
         {
@@ -250,5 +302,5 @@ public class tvscreen : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }
